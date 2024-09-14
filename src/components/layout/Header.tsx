@@ -8,18 +8,12 @@ const Header = () => {
     { name: "Services", link: "/services" },
     { name: "Pricing", link: "/pricing" },
     { name: "Contact", link: "/contact" },
+    { name: "Tracking", link: "/tracking" },
   ];
 
   const [open, setOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
+ 
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -56,7 +50,7 @@ const Header = () => {
       <header className="shadow-md w-full fixed top-0 left-0 z-50   bg-white">
         <div className="flex mx-4 md:flex items-center justify-between py-4 md:px-10 px-7">
           <div>
-          <img src={darkMode ? "./src/assets/images/Grou.png" : "./src/assets/images/image3.svg"} className=' ' alt="Logo" />
+          <img src={"./src/assets/images/image3.svg"} className=' ' alt="Logo" />
           </div>
           <div>
           <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
@@ -71,11 +65,11 @@ const Header = () => {
                 </NavLink>
               ))}
 
-            <div onClick={() => setDarkMode(!darkMode)} className="cursor-pointer">
-            <img src={darkMode ? './src/assets/images/light.svg' : './src/assets/images/dark.svg'} alt="Dark Mode Toggle" className='w-12 h-6 px-2 transition-all duration-500' />
+           <div>
+            <button className=" p-2 px-6 mx-4 ml-9 border-blue-600 bg-white font-display text-blue-600 rounded-full border-2 font-bold">Se connecter</button>
           </div>
           <div>
-            <button className=" p-2 px-6 mx-6 bg-blue-600 font-display text-white rounded-full border-2">S'inscrire</button>
+            <button className=" p-2 px-6 mx-4 bg-blue-600 border-blue-600 font-display text-white rounded-full border-2 font-bold">S'inscrire</button>
           </div>
             </nav>
           </div>

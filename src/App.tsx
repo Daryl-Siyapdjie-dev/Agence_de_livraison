@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Pricing from "./pages/pricing";
+import TrackingDashboard from "./pages/TrackingDashboard";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route  path="/services" element={<Services/>}></Route>
         <Route  path="/pricing" element={<Pricing/>}></Route>
         <Route  path="/contact" element={<Contact/>}></Route>
+        <Route  path="/tracking" element={<TrackingDashboard/>}></Route>
       </Routes>
     </HashRouter>
     

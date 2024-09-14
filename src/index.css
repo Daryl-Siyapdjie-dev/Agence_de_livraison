@@ -11,4 +11,9 @@
   .animation-delay-4000{
     animation-delay: 4s;
   }
+  input[type="radio"]:checked + label {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+  }
 }

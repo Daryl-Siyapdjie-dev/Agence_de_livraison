@@ -17,3 +17,27 @@
     border-color: #3498db;
   }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Outfit', 'sans-serif'
+  
+  
+}
+
+
+
+nav.NavLink.active {
+  color: #1A8CB0 !important;
+  border-bottom:  #1A8CB0 !important;
+}
+
+body {
+  background-color: hsl(248, 34%, 30%);
+}
+p{
+  font-family: 'Outfit', 'sans-serif';
+}

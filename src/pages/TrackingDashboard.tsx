@@ -69,7 +69,8 @@ const TrackingDashboard: React.FC = () => {
   
 
   return (
-    <div className="tracking-dashboard pt-24 p-4">
+   <section  className=' bg-white' id='tracking' >
+     <div className="tracking-dashboard sm:pt-24 p-4 bg-white">
       <h1 className="text-2xl font-bold mb-4">Suivi de colis</h1>
 
       <div className="search-bar mb-6">
@@ -98,6 +99,7 @@ const TrackingDashboard: React.FC = () => {
 
       <ToastContainer />
     </div>
+   </section>
   );
 };
 

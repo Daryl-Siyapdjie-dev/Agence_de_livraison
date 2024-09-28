@@ -9,7 +9,8 @@ export default {
   theme: {
     extend: {
       animation: {
-        blob: "blob 7s infinite"
+        blob: "blob 7s infinite",
+        'ping-custom': 'ping-custom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite',
       },
       keyframes: {
         blob: {
@@ -26,7 +27,12 @@ export default {
             transform: "translate(0px, 0px) scale(1)",
           },
 
-        }
+        },
+        'ping-custom': {
+          '0%': { transform: 'scale(1)', opacity: '1' },
+          '75%': { transform: 'scale(1.8)', opacity: '0' },
+          '100%': { transform: 'scale(2)', opacity: '0' },
+        },
       },
       fontFamily: {
         sans: ['Montserrat', 'Helvetica', 'Arial', 'sans-serif'],
@@ -34,6 +40,7 @@ export default {
         display: ['Outfit', 'sans-serif'],
         body: ['Cormorant Garamond', 'serif'],
       },
+      
     },
   },
   plugins: [],

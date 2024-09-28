@@ -11,15 +11,15 @@ const PricingComponent0 = () => {
   };
 
   return (
-    <div className="shadow-xl drop-shadow-2xl p-4 m-4 text-center font-display rounded-3xl lg:w-96">
-      <h3 className="text-2xl font-display py-6 font-bold text-blue-600 text-center">Petit colis</h3>
-      <p className="text-lg">jusqu'à <span className="text-7xl text-blue-600">2kg</span></p>
+    <div className="shadow-xl drop-shadow-2xl p-2 sm:m-4 sm:my-7 text-center font-display rounded-3xl w-full sm:w-80 md:w-96 lg:w-96">
+      <h3 className="text-xl font-display py-3 font-bold text-blue-600 text-center">Petit colis</h3>
+      <p className="text-xs">jusqu'à <span className="text-6xl text-blue-600">2kg</span></p>
 
       {/* Prix avec animation */}
-      <div className="p-4 text-lg text-gray-500">
+      <div className="p-4 text-sm text-gray-500">
         XAF
         <motion.span
-          className="px-4 text-2xl text-blue-400"
+          className="px-4 text-xl text-blue-400"
           key={price}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -30,11 +30,11 @@ const PricingComponent0 = () => {
       </div>
 
       {/* Options */}
-      <div className="py-4 shadow  rounded-xl">
-        <div className="flex justify-between p-4 my-4">
+      <div className="py-3 my-4 shadow rounded-xl">
+        <div className="flex justify-between p-3 my-2">
           <div>
-            <p className="text-left text-lg">Livraisons Express</p>
-            <p className="text-left  text-gray-500">Moins de 24 heures</p>
+            <p className="text-left text-base">Livraisons Express</p>
+            <p className="text-left text-sm text-gray-500">Moins de 24 heures</p>
           </div>
           <div>
             <p className="text-blue-400">{selectedOption === 'option1' ? price : 1000}</p>
@@ -52,21 +52,21 @@ const PricingComponent0 = () => {
           />
           <label
             htmlFor="option1"
-            className="inline-block px-4 py-1 border-2 border-gray-300 rounded-full cursor-pointer transition-colors font-display text-gray-300 duration-300"
+            className="inline-block text-sm px-4 py-1 border-2 border-gray-300 rounded-full cursor-pointer transition-colors font-display text-gray-300 duration-300"
           >
             Option 1
           </label>
         </div>
       </div>
 
-      <div className="py-4 shadow my-5 rounded-xl">
-        <div className="flex justify-between p-4">
+      <div className="py-3 shadow  rounded-xl">
+        <div className="flex justify-between p-3 my-2">
           <div>
-            <p className="text-left text-lg">Livraisons Standard</p>
-            <p className="text-left text-gray-500">(2 à 3 jours)</p>
+            <p className="text-left text-base">Livraisons Standard </p>
+            <p className="text-left text-sm text-gray-500">(2 à 3 jours)</p>
           </div>
           <div>
-            <p className="text-blue-400">{selectedOption === 'option2' ? price : 2500}</p>
+            <p className="text-blue-400 pl-1">{selectedOption === 'option2' ? price : 2500}</p>
           </div>
         </div>
 
@@ -81,7 +81,7 @@ const PricingComponent0 = () => {
           />
           <label
             htmlFor="option2"
-            className="inline-block px-4 text-gray-300 py-1 border-2 border-gray-300 rounded-full cursor-pointer transition-colors duration-300"
+            className="inline-block px-4 py-1 text-sm border-2 border-gray-300 rounded-full cursor-pointer transition-colors duration-300"
           >
             Option 2
           </label>
@@ -89,9 +89,16 @@ const PricingComponent0 = () => {
       </div>
 
       <div className="my-7">
-        <button className="p-2 px-6 mx-6 bg-blue-600 font-display text-white rounded-full border-2 font-bold shadow-2xl">
+        <motion.button 
+            whileHover={{
+              scale: 1.1,
+              rotate: 3,
+              boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)",
+            }}
+            whileTap={{ scale: 0.95, rotate: -3 }}
+        className="p-2 px-6 mx-6 bg-blue-600 font-display text-white rounded-full border-2 font-bold shadow-2xl">
           Buy Now
-        </button>
+        </motion.button>
       </div>
     </div>
   );

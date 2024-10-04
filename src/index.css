@@ -23,9 +23,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Outfit', 'sans-serif'
-  
-  
+  font-family: 'Outfit', 'sans-serif';
 }
 
 
@@ -36,7 +34,7 @@ nav.NavLink.active {
 }
 
 body {
-  background-color: hsl(248, 34%, 30%);
+  background-color: hsl(0, 0%, 100%);
 }
 p{
   font-family: 'Outfit', 'sans-serif';

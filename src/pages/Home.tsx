@@ -3,7 +3,7 @@ import LocationInput from '../components/common/LocationInput ';
 
 const Home = () => {
   return (
-    <section id="home" className="min-h-[90vh] bg-white lg:max-h-80  pt-24 px-4 md:px-8 flex flex-col lg:flex-row py-8 text-gray-800 font-bold lg:h-56 lg:p-8 ">
+    <section id="home" className="min-h-[90vh] bg-white lg:max-h-80 my-8  pt-24 px-4 md:px-8 flex flex-col lg:flex-row py-8 text-gray-800 font-bold lg:h-56 lg:p-8 ">
       <div className="text-center w-full lg:w-1/2 flex flex-col lg:mx-6 lg:px-8 p-2 lg:mt-36 h-full lg:h-screen">
         <h1 className="text-4xl sm:text-4xl lg:text-6xl text-blue-600 text-start font-bold mb-4">
           <Typewriter

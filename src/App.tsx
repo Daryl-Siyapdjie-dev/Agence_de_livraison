@@ -3,9 +3,9 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import TrackingDashboard from "./pages/TrackingDashboard";
 import Pricing from "./pages/pricing";
 import Footer from "./components/layout/Footer";
+import Tracking from "./pages/TrackingDashboard";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
         <About />
         <Services />
         <Pricing />
+        <Tracking/>
         <Contact />
-        <TrackingDashboard />
         <Footer/>
       </main>
     </div>

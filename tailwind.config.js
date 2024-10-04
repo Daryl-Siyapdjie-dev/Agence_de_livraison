@@ -40,6 +40,9 @@ export default {
         display: ['Outfit', 'sans-serif'],
         body: ['Cormorant Garamond', 'serif'],
       },
+      backgroundImage: {
+        'tracking-image': "url('./src/assets/images/Delivery2.gif')",
+      }
       
     },
   },
